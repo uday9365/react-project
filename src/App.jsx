@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle/>
       <BrowserRouter>
         <Header/>
           <Routes>
@@ -42,7 +44,7 @@ const App = () => {
             <Route path="/contact" element={<Contact/>}/>
           </Routes>
         <Footer/>
-      </BrowserRouter>
+      </BrowserRouter>      
     </ThemeProvider>
   )
 }

@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
  html{
   font-size: 62.5%;
   scroll-behavior: smooth;
-  // 1rem = 10px;
+  /*1rem = 10px;*/
   overflow-x: hidden;
  }
 
@@ -21,6 +21,34 @@ export const GlobalStyle = createGlobalStyle`
   font-weight: 900;
  }
 
+ h2{
+  color: ${({theme}) => theme.color.heading};
+  font-size: 4.4rem;
+  font-weight: 300;
+  white-space: normal;
+  text-align: center;
+ }
 
+ h3{
+  font-size: 1.8rem;
+  font-wight: 400;
+ }
+
+ p{
+  color: ${({theme}) => theme.color.text};
+  opacity: 0.7;
+  font-size: 1.65rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  font-weight: 400;
+ }
+
+ a{
+  text-decoration: none;
+ }
+
+ li{
+  list-style: none;
+ }
 
 `;
