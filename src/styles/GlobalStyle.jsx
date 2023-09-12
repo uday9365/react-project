@@ -51,4 +51,25 @@ export const GlobalStyle = createGlobalStyle`
   list-style: none;
  }
 
+ .container{
+  max-width: 120rem;
+  margin: 0 auto;
+ }
+
+ .grid{
+  display: grid;
+  gap: 9rem
+ }
+
+ .grid-two-column{
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+ .grid-three-column{
+  grid-template-columns: repeat(3, 1fr);
+ }
+
+ .grid-four-column{
+  grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr;
+ }
 `;
