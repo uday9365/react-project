@@ -1,24 +1,23 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 
-const HeroSection = () => {
+const HeroSection = ({name, image, para }) => {
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
           <p className="hero-top-data">This is me</p>
-          <h1 className="hero-heading">Miles Morales</h1>
-          <p className="hero-para">Friendly neighbourhood Spider-man Miles Morales, New York only 
-            spider-man. The biracial teenage son of an African-American father and a Puerto Rican mother, Miles Morales is the second Spider-Man to appear in Ultimate Marvel, an imprint with a separate continuity from the mainstream Marvel Universe called the Ultimate Universe.
-          </p>
+          <h1 className="hero-heading">{name}</h1>
+          <p className="hero-para">{para}</p>
           <Button className="btn hireme-btn">
             <NavLink to="/contact">Hire me</NavLink>
           </Button>
         </div>
         <div className="section-hero-image">
           <picture>
-            <img src="../images/miles-hero.png" alt="hero-img" className="hero-img"/>
+            <img src= {image} alt="hero-img" className="hero-img"/>
           </picture>
         </div>
       </div>
