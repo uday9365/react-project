@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 
-const HeroSection = ({name, image, para }) => {
+const HeroSection = ({greet, name, image, para}) => {
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
-          <p className="hero-top-data">This is me</p>
+          <p className="hero-top-data">{greet}</p>
           <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">{para}</p>
           <Button className="btn hireme-btn">
