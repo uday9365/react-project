@@ -1,8 +1,8 @@
-/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 
+// eslint-disable-next-line react/prop-types
 const HeroSection = ({greet, name, image, para}) => {
   return (
     <Wrapper>
