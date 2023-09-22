@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
+import { useGlobalContext } from "../context";
 
 // eslint-disable-next-line react/prop-types
-const HeroSection = ({greet, name, image, para}) => {
+const HeroSection = () => {
+  const {greet, name, image, para} = useGlobalContext();
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
